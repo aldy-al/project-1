@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jefree Profile">
+    <title>HARAPAN.BIKE</title>
+    <link rel="stylesheet" href="/css/pure/pure-min.css">
+    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/layouts/marketing/styles.css">
+    <style>
+            * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        line-height: 1.7em;
+        color: #7f8c8d;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label {
+        color: #34495e;
+    }
+
+    .pure-img-responsive {
+        max-width: 100%;
+        height: auto;
+        border: 0px;
+        box-shadow: 0px 0px 9px 5px rgb(209, 221, 208);
+        padding: 0px;
+    }
+
+
+    .l-box {
+        padding: 1em;
+    }
+
+    .l-box-lrg {
+        padding: 2em;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .is-center {
+        text-align: center;
+    }
+
+    .pure-form label {
+        margin: 1em 0 0;
+        font-weight: bold;
+        font-size: 100%;
+    }
+
+    .pure-form input[type] {
+        border: 2px solid #ddd;
+        box-shadow: none;
+        font-size: 100%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .pure-button {
+        background-color: #1f8dd6;
+        color: white;
+        padding: 0.5em 2em;
+        border-radius: 5px;
+    }
+
+    a.pure-button-primary {
+        background: white;
+        color: #054f1485;
+        border-radius: 5px;
+        font-size: 120%;
+        text-decoration: none;
+    }
+
+    .home-menu {
+        padding: 0.5em;
+        text-align: center;
+        box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    }
+    .home-menu {
+        background: #2d3e50;
+    }
+    .pure-menu.pure-menu-fixed {
+        border-bottom: none;
+        z-index: 4;
+    }
+
+    .home-menu .pure-menu-heading {
+        color: white;
+        font-weight: 400;
+        font-size: 120%;
+    }
+
+    .home-menu .pure-menu-selected a {
+        color: white;
+    }
+
+    .home-menu a {
+        color: #6FBEF3;
+    }
+    .home-menu li a:hover,
+    .home-menu li a:focus {
+        background: none;
+        border: none;
+        color: #AECFE5;
+    }
+
+    .splash-container {
+        background: #1f8dd6;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        height: 88%;
+        top: 0;
+        left: 0;
+        position: fixed !important;
+    }
+
+    .splash {
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        position: absolute;
+        top: 100px; left: 0; bottom: 0; right: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .splash-head {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        color: white;
+        border: 3px solid rgb(231, 213, 181);
+        padding: 1em 1.6em;
+        font-weight: 100;
+        border-radius: 5px;
+        line-height: 1em;
+    }
+
+    .splash-subhead {
+        color: white;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+    }
+
+    .content-wrapper {
+        position: absolute;
+        top: 87%;
+        width: 100%;
+        min-height: 12%;
+        z-index: 2;
+        background: white;
+
+    }
+
+    .content {
+        padding: 1em 5em 5em   ;
+        
+    }
+
+    .content-head {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 2em 0 1em;
+    }
+
+    .content-head-ribbon {
+        color: white;
+    }
+
+    .content-subhead {
+        color: #1f8dd6;
+    }
+        .content-subhead i {
+            margin-right: 7px;
+        }
+
+    .ribbon {
+        background: #2d3e50;
+        color: #aaa;
+    }
+
+    .footer {
+        background: #111;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    @media (min-width: 48em) {
+
+        body {
+            font-size: 16px;
+        }
+
+        .home-menu {
+            text-align: left;
+        }
+            .home-menu ul {
+                float: right;
+            }
+
+        .splash {
+            width: 50%;
+            height: 50%;
+        }
+
+        .splash-head {
+            font-size: 250%;
+        }
+
+
+        
+        .l-box-lrg {
+            border: none;
+        }
+
+    }
+
+    @media (min-width: 78em) {
+        .splash-head {
+            font-size: 300%;
+        }
+    }
+
+    a {
+        font-size: larger;
+        color: rgb(7, 148, 4);
+        text-decoration: none;
+    }
+
+    .Kirim {
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .Kirim a:hover {
+        color: black;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Your Site</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">HARAPAN.BIKE </h1>
+        <p class="splash-subhead" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            MENERIMA JASA PERBAIKAN SEPEDA 
+        </p>
+        <p>
+            <a href="https://www.facebook.com/harapan.f.zega" class="pure-button pure-button-primary" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Facebook</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center" style="font-family:Arial, Helvetica, sans-serif"><b>SELAMAT DATANG DI HARAPAN.BIKE</b></h2>
+        <hr />
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    NAMA PEMILIK TOKO
+                </h3>
+                <p>
+                    HARAPAN FAJAR P. ZEGA
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    ALAMAT
+                </h3>
+                <p>
+                    JLN.GADING PUTIH RAYA UTARA - NO.3 BLOK
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    T
+                </h3>
+                <p>
+                    Mazingo - 02 - 09 - 2003
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    
+                    <p></p>
+                </h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" alt="File Icons" class="pure-img-responsive" src="fajar.png" title="Fajar Profile">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Harapan fajar p.Zega</h2>
+
+            <p>
+                HARAPAN.BIKE adalah sebuah usaha yang didirikan oleh<a href="https://www.facebook.com/harapan.f.zega"> HARAPAN F. P. ZEGA</a>&nbsp; yang menerima jasa perbaikan sepeda. HARAPAN.BIKE  juga menjual segala peralatan dan bahan yang digunakan disepeda dengan harga yang cukup bersahabat 
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">ISI DATA ANDA UNTUK LOGIN</h2>
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Nama</label>
+                        <input id="name" type="text" placeholder="">
+
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="">
+
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="">
+
+                        <button type="submit" class="pure-button">Kirim</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="Kirim">
+            <a href="barnav.html">MASUK</a>
+            </div>
+            
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>KONTAK</h4>
+                <p>
+                    Silahkan chat saya di <a href="https://wa.me/6282213561938">WHATSAPP</a>
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    silahkan hubungi kami di <a href="jefreezega@gmail.com"> EMAIL</a>
+                </p>
+                <p>KONTAK DEVELOPER</p>
+                 <a href="https://wa.me/6282213561938">WHATSAPP</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer l-box is-center">
+        JLN. KELAPA GADING PUTIH RAYA UTARA NO.3 BLOK  
+    </div>
+
+</div>
+
+</body>
+</html>
